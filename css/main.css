@@ -1,0 +1,388 @@
+html, body, #skrollr-body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+#loading-div{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000000 !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url("../img/will.gif") 50% 50% no-repeat rgb(255,255,255);
+}
+
+#slide-1{
+	width: 100%;
+	height: 100%;
+}
+
+#slide-2{
+	width: 100%;
+	height: 100%;
+}
+
+#slide-3{
+	width: 100%;
+	height: 500%;
+}
+
+#slide-4{
+	width: 100%;
+	height: 350%;
+}
+
+
+#slide-6{
+	width: 100%;
+	height: 500%;
+}
+
+#slide-7{
+	width: 100%;
+	height: 150%;
+}
+
+
+.fixed-wrapper{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility:hidden;
+}
+
+.fixed-wrapper div, .fixed-wrapped h2{
+    position: fixed;
+}
+
+#goldengate{
+	width: 100%;
+	height: 100%;
+	background: url("../img/goldengate.jpg");
+	background-repeat: no-repeat;
+
+}
+
+@media(max-width: 700px){
+	#goldengate{
+		background-position: 85% 70%; 
+	    background-size: auto 100%;
+	}
+}
+@media(min-width: 701px){
+	#goldengate{
+		background-position: 85% 50%; 
+		background-size: auto 100%;
+	}	
+}
+
+#meet-paul{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	z-index: 10 !important;
+	color: white;
+	font-size: 55px;
+}
+
+#fog{
+  background-image: url("../img/goldengate-anim-fog-4.png");
+  height: 100%;
+  width: 150%;
+  background-repeat: no-repeat;
+  background-size: 120% 150%;
+  background-position: 85% 70%; 
+}
+
+#scientist-musician{
+  transform-origin: 20% 80%;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+#graduate{
+	height: 100%;
+	width: 100%;
+	background: url('../img/grad-1.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+#musician{
+	height: 100%;
+	width: 100%;
+	background: url('../img/musician-2.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+
+#turned-full-div{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-dev.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#turned-full{
+  height: 100%;
+  width: 100%;
+  background: hsla(0,0%,100%,0.5);
+  padding-left: 15%;
+  padding-top: 25%;
+  font-size: 35px;
+}
+
+#full-stack-dev{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-main-main.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: hsla(0,0%,0%,0.9);
+}
+
+#thought-0{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-thought-0.png');
+	background-size: 100% 100%;
+}
+
+#thought-1{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-thought-1.png');
+	background-size: 100% 100%;
+}
+
+#thought-2{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-thought-2.png');
+	background-size: 100% 100%;
+}
+
+#thought-3{
+	height: 100%;
+	width: 100%;
+	background: url('../img/pressy-thought-3.png');
+	background-size: 100% 100%;
+}
+
+
+
+#sun-1{
+	height: 110%;
+	width: 100%;
+	background: url('../img/sun-1.png');
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#sun-2{
+	height: 100%;
+	width: 100%;
+	background: url('../img/sun-2.png');
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#sun-3{
+	height: 110%;
+	width: 100%;
+	background: url('../img/sun-3.png');
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#sun-4{
+	height: 100%;
+	width: 100%;
+	background: white;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+@media(min-width: 701px){
+	#sun-1, #sun-2, #sun-3, #sun-4{
+		background-size: 100% 100%;
+	}	
+}
+
+
+#utilizing{
+  height: 100%;
+  width: 70%;
+/*  background: hsla(0,0%,100%,0.5);*/
+  padding-left: 15%;
+  padding-top: 25%;
+  font-size: 35px;
+  color: white;
+}
+
+#always{
+  height: 100%;
+  width: 70%;
+/*  background: hsla(0,0%,100%,0.5);*/
+  padding-left: 15%;
+  padding-top: 25%;
+  font-size: 35px;
+  color: white;
+}
+
+
+#discovery-anim-1{
+	height: 100%;
+	width: 100%;
+	background: url('../img/discovery-anim-1.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+#discovery-anim-2{
+	height: 100%;
+	width: 100%;
+	background: url('../img/discovery-anim-2.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+#discovery-anim-3{
+	height: 100%;
+	width: 100%;
+	background: url('../img/discovery-anim-3.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+
+#discovery-anim-4{
+	height: 100%;
+	width: 100%;
+	background: url('../img/discovery-anim-5.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+#discovery-anim-5{
+	height: 100%;
+	width: 100%;
+	background: url('../img/discovery-anim-12.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+#discovery-anim-6{
+	height: 120%;
+	width: 120%;
+	left: 0%;
+	bottom: 0%;
+	background: url('../img/discovery-anim-7.png');
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+
+#discovery-anim-blue{
+	height: 100%;
+	width: 100%;
+	background: #081033;
+	background-size: auto 100%;
+	background-position: 20% 50%;
+}
+
+@media(min-width: 701px){
+	#discovery-anim-1, #discovery-anim-2, #discovery-anim-3, #discovery-anim-4, #discovery-anim-5, #discovery-anim-6, #discovery-anim-blue{
+		background-size: 100% 100%;
+	}	
+}
+
+
+#fire-side-chat{
+	height: 100%;
+	width: 100%;
+	background: url('../img/camp_fire.jpg');
+	background-size: 100% 100%;
+}
+
+#fire-side-chat-cover{
+	height: 100%;
+	width: 100%;
+	background: hsla(0,0%,0%,1.0);
+	background-size: 100% 100%;
+}
+
+#links-a{
+	width: 100%;
+	height: 75%;
+	display: table;
+}
+
+#links-b{
+	width: 60%;
+	height: 100%;
+	display: table;
+	padding-left: 20%;
+/*	padding-right: 10%;*/
+}
+
+#links-a h3, #links-b  a{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+#links-b  a img{
+	width: 80px;
+}
+
+#links-a h3{
+	font-size: 35px;
+}
+
+
+
+.fireFly {
+    -webkit-transition: box-shadow 1s linear;
+    -moz-transition: box-shadow 1s linear;
+    -ms-transition: box-shadow 1s linear;
+    -o-transition: box-shadow 1s linear;
+    transition: box-shadow 1s linear;
+    position: fixed;
+}
+
+.fireFly.glow{
+/*    background-color: white;*/
+    box-shadow: 0 0 15px rgba(232,240,5,1) !important;
+}
+
+
+.fireFly{
+    width: 4px;
+    height: 4px;
+    background-color: -webkit-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2)); 
+    background: -o-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2));
+    background: -moz-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2)); 
+    background: radial-gradient(rgba(255,255,255,.5), rgba(252,250,150,1));
+/*    background-color: rgba(252,250,150,.4);*/
+    box-shadow: 0 0 5px rgba(232,240,5,1);
+    border-radius: 5px;
+}
+
+svg{
+	max-width: 100vw;
+}
+
