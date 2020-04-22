@@ -1,4 +1,4 @@
-// Code based off blogpost at http://www.bram.us/2014/01/01/skrollr-css-animations-linked-to-scroll-position/
+// For useful tutorial on skrollr js, see blogpost at http://www.bram.us/2014/01/01/skrollr-css-animations-linked-to-scroll-position/
 
 skrollr.init({
         forceHeight: false,
@@ -6,54 +6,47 @@ skrollr.init({
 
 // Create fireflies for final slide
 var fireFly1 = $('#fireFly1');
-	setInterval(function(){
-
-	    fireFly1.hasClass('glow') ? fireFly1.removeClass('glow') : fireFly1.addClass('glow');
+setInterval(function(){
+    fireFly1.hasClass('glow') ? fireFly1.removeClass('glow') : fireFly1.addClass('glow');
 }, 1042);
 
 var fireFly2 = $('#fireFly2');
-	setInterval(function(){
-	    fireFly2.hasClass('glow') ? fireFly2.removeClass('glow') : fireFly2.addClass('glow');
+setInterval(function(){
+	fireFly2.hasClass('glow') ? fireFly2.removeClass('glow') : fireFly2.addClass('glow');
 }, 930);
 
 var fireFly3 = $('#fireFly3');
-	setInterval(function(){
-
-	    fireFly3.hasClass('glow') ? fireFly3.removeClass('glow') : fireFly3.addClass('glow');
+setInterval(function(){
+	fireFly3.hasClass('glow') ? fireFly3.removeClass('glow') : fireFly3.addClass('glow');
 }, 800);
 
 var fireFly4 = $('#fireFly4');
-	setInterval(function(){
-	    fireFly4.hasClass('glow') ? fireFly4.removeClass('glow') : fireFly4.addClass('glow');
+setInterval(function(){
+    fireFly4.hasClass('glow') ? fireFly4.removeClass('glow') : fireFly4.addClass('glow');
 }, 900);
 
 var fireFly5 = $('#fireFly5');
-	setInterval(function(){
-
-	    fireFly5.hasClass('glow') ? fireFly5.removeClass('glow') : fireFly5.addClass('glow');
+setInterval(function(){
+    fireFly5.hasClass('glow') ? fireFly5.removeClass('glow') : fireFly5.addClass('glow');
 }, 750);
 
 var fireFly6 = $('#fireFly6');
-	setInterval(function(){
-	    fireFly6.hasClass('glow') ? fireFly6.removeClass('glow') : fireFly6.addClass('glow');
+setInterval(function(){
+    fireFly6.hasClass('glow') ? fireFly6.removeClass('glow') : fireFly6.addClass('glow');
 }, 1500);
 
 var fireFly7 = $('#fireFly7');
-	setInterval(function(){
-	    fireFly7.hasClass('glow') ? fireFly7.removeClass('glow') : fireFly7.addClass('glow');
+setInterval(function(){
+    fireFly7.hasClass('glow') ? fireFly7.removeClass('glow') : fireFly7.addClass('glow');
 }, 1300);
-
-
 
 
 function makeNewPosition(){    
     // Get viewport dimensions (remove the dimension of the div)
     var h = $(window).height() - 50;
     var w = $(window).width() - 50;
-
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
-
     return [nh,nw];    	    
 }
 
@@ -121,18 +114,12 @@ function animateDivs7(){
 };
 
 function calcSpeed(prev, next) {
-	    
 	    var x = Math.abs(prev[1] - next[1]);
 	    var y = Math.abs(prev[0] - next[0]);
-	    
 	    var greatest = x > y ? x : y;
-	    
 	    var speedModifier = 0.5;
-
 	    var speed = Math.ceil(greatest/speedModifier);
-
 	    return speed;
-
 }
 
 animateDivs();
