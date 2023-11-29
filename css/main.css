@@ -139,7 +139,7 @@ html, body, #skrollr-body{
   background: hsla(0,0%,100%,0.5);
   padding-left: 15%;
   padding-top: 25%;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #full-stack-dev{
@@ -337,6 +337,39 @@ html, body, #skrollr-body{
 /*	padding-right: 10%;*/
 }
 
+#links-c{
+
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+/*	padding-right: 10%;*/
+}
+
+#links-d{
+
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 1000 !important;
+}
+
+#links-f{
+
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 100 !important;
+}
+
+#scroll-for-fun{
+	color: white;
+	display: inline;
+}
+
+
 #links-a h3, #links-b  a{
 	display: table-cell;
 	vertical-align: middle;
@@ -353,6 +386,16 @@ html, body, #skrollr-body{
 	font-size: 35px;
 }
 
+#portfolio-link{
+	margin-top: 20px;
+	color: white;
+}
+
+#portfolio-link-1{
+	margin-top: 20px;
+	color: white;
+}
+
 
 
 .fireFly {
@@ -366,20 +409,24 @@ html, body, #skrollr-body{
 
 .fireFly.glow{
 /*    background-color: white;*/
-    box-shadow: 0 0 15px rgba(232,240,5,1) !important;
+    box-shadow: 0 0 20px rgba(232,240,5,1) !important;
+	opacity: 0 !important;
 }
 
 
 .fireFly{
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     background-color: -webkit-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2)); 
     background: -o-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2));
     background: -moz-radial-gradient(rgba(73,54,137,.5), rgba(73,54,137,0.2)); 
     background: radial-gradient(rgba(255,255,255,.5), rgba(252,250,150,1));
 /*    background-color: rgba(252,250,150,.4);*/
     box-shadow: 0 0 5px rgba(232,240,5,1);
+	background-color: rgba(232,240,5,1);
     border-radius: 5px;
+	opacity: 1;
+	transition: opacity 0.5s ease;
 }
 
 svg{

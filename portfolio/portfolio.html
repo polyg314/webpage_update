@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+
+body{
+    margin: 0px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+
+body::before, body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body::before {
+    background: repeating-linear-gradient(
+                    45deg,
+                    rgba(51, 51, 255, 0.3) 0,
+                    rgba(51, 51, 255, 0.3) 20px,
+                    transparent 20px,
+                    transparent 40px),
+                repeating-linear-gradient(
+                    135deg,
+                    rgba(255, 51, 255, 0.3) 0,
+                    rgba(255, 51, 255, 0.3) 20px,
+                    transparent 20px,
+                    transparent 40px);
+    background-size: 80px 80px;
+    animation: moveBackground 20s linear infinite;
+}
+
+body::after {
+    background: repeating-linear-gradient(
+                    45deg,
+                    rgba(51, 255, 51, 0.3) 0,
+                    rgba(51, 255, 51, 0.3) 20px,
+                    transparent 20px,
+                    transparent 40px),
+                repeating-linear-gradient(
+                    135deg,
+                    rgba(255, 255, 51, 0.3) 0,
+                    rgba(255, 255, 51, 0.3) 20px,
+                    transparent 20px,
+                    transparent 40px);
+    background-size: 80px 80px;
+    animation: moveBackground 20s linear infinite reverse;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 80px 80px; }
+}
+
+
+#titleBar {
+    background-color: #000000cf; /* Neon pink */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00; /* Neon glow effect */
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #000000cf; /* Dark background for cards */
+    color: #00ff00; /* Neon green text */
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    /* width: 200px; */
+    /* width: calc(25% - 60px); */
+    flex-basis: calc(25% - 60px);
+    /* height: 300px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 255, 0, 0.6); /* Neon-like shadow */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lifts card on hover */
+    box-shadow: 0 6px 12px 0 #ff0080; /* Increased glow on hover */
+}
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-shadow: 0 0 2px rgba(0, 255, 0, 0.7); 
+}
+
+.project-description {
+    font-size: 14px;
+    color: white;
+}
+
+
+    /* Media query for medium screens - 2 cards per row */
+    @media (max-width: 1000px) {
+        .project-card {
+            /* width: calc(50% - 60px); */
+            flex-basis: calc(50% - 60px); /* 2 cards per row, minus margin */
+        }
+    }
+
+    /* Media query for small screens - 1 card per row */
+    @media (max-width: 500px) {
+        .project-card {
+            /* width: calc(100% - 60px); */
+            flex-basis: calc(100% - 60px); /* 1 card per row, minus margin */
+        }
+    }
+
+.project-image{
+    width: 100%;
+}
+
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="titleBar">Portfolio</div>
+    <div id="projects">
+        <a class="project-card" href="https://smoothie-prepper-fe-cukg53foaq-wl.a.run.app/" target="_blank">
+
+        
+        <!-- <div > -->
+            <div class="project-title">Smoothie Prepper</div>
+            <img src="../img/smoothie.png" class="project-image"/>
+            <div class="project-description">
+                <b>Description:</b> Meal Prep App for Smoothies
+                <br/>
+                <br/>
+                <b>Backend:</b> PostgreSQL/Python/Flask
+                <br/>
+                <br/>
+                <b>Frontend:</b>  React.js/Typescript/MaterialUI
+            </div>
+        <!-- </div> -->
+        </a>
+ 
+        
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
